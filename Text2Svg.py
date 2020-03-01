@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QColor
 from PyQt5.QtSvg import QSvgWidget
-from PyQt5.QtWidgets import QMainWindow, QApplication, QColorDialog, QPushButton, QLineEdit, QLabel, QFileDialog, QGridLayout, QWidget
+from PyQt5.QtWidgets import QMainWindow, QApplication, QColorDialog, QPushButton, QLineEdit, QLabel, QFileDialog, \
+    QGridLayout, QWidget
 
 
-class App(QMainWindow):
+class Tex2Svg(QMainWindow):
 
     def __init__(self):
         super().__init__()
@@ -95,5 +96,5 @@ class App(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = App()
+    ex = Tex2Svg()
     sys.exit(app.exec_())
