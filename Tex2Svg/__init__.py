@@ -1,0 +1,1 @@
+from Tex2Svg import Tex2Svg
